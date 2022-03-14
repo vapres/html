@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Album example</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <style>
+       
+        .main-header{
+            font-weight: 300;
+            
+        }
+
+
+        .b{
+            display: flex;
+            justify-content: space-between
+            
+        }
+
+        .bg-light {
+           --bs-bg-opacity: 1;
+           background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+        }
+
+        .py-5 {
+          padding-top: 3rem !important;
+          padding-bottom: 3rem !important;
+        }
+        .head-container{
+          text-align: center;
+          margin-bottom: 100px;
+          margin-top: 100px;
+        }
+        .text{
+            margin-top: 60px;
+            margin-bottom: 60px;
+            margin-left: 100px;
+            --bs-text-opacity: 1;
+            color: #6c757d !important;
+        }
+        .justify{
+           --bs-text-opacity: 1;
+           color: #6c757d !important;
+           display: flex;
+           justify-content: space-between  !important;
+           margin-top: 50px;
+           margin-bottom: 50px;
+           margin-left: 100px;
+           margin-right: 100px;
+        }
+        
+        .navbar-brand{
+            display: flex;
+            align-items: center;
+        }
+       
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="30" style="margin-left: 100px;"  fill="currentColor"  class="bi bi-camera" viewBox="0 0 16 16">
+                <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/>
+                <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+            </svg>
+
+            <strong style="margin-left: 5px">Album</strong>
+          </a>
+        </div>
+      </nav>
+
+      <div class="head-container">
+          <h1 class="main-header">Album example</h1>
+          <p class="lead text-muted">
+            Something short and leading about the collection below—its contents,
+            <br>the creator, etc. Make it short and sweet, but not too short so
+             <br>folks don't simply skip over it entirely.
+          </p>
+
+          <div>
+            <a href="#" class="btn btn-success my-2">Add new image</a>
+            <a href="#" class="btn btn-outline-danger my-2">Delete</a>
+          </div>
+      </div>
+
+ <div class="container py-5 bg-light">
+    <div class="row">
+        <div class="col-md-4">
+           <div class="card">
+               <img src="images/hello.png">
+           </div>
+           <div class="card-body">
+               <div class="card-text">
+                  This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+               </div>
+               <div class="b mt-3">
+                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                   <button class="btn btn-outline-secondary btn-sm">View</button>
+                   <button class="btn btn-outline-secondary btn-sm">Edit</button>
+                </div>
+                <span style="color: #6c757d;">
+                    9 mins
+                </span>
+               </div>
+           </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="images/hello.png">
+            </div>
+            <div class="card-body">
+                <div class="card-text">
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                </div>
+                <div class="b mt-3">
+                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                    <button class="btn btn-outline-secondary btn-sm">View</button>
+                    <button class="btn btn-outline-secondary btn-sm">Edit</button>
+                 </div>
+                 <span style="color: #6c757d;">
+                     9 mins
+                 </span>
+                </div>
+            </div>
+         </div>
+
+         <div class="col-md-4">
+            <div class="card">
+                <img src="images/hello.png">
+            </div>
+            <div class="card-body">
+                <div class="card-text">
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                </div>
+                <div class="b mt-3">
+                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                    <button class="btn btn-outline-secondary btn-sm">View</button>
+                    <button class="btn btn-outline-secondary btn-sm">Edit</button>
+                 </div>
+                 <span style="color: #6c757d;">
+                     9 mins
+                 </span>
+                </div>
+            </div>
+         </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="images/hello.png">
+            </div>
+            <div class="card-body">
+                <div class="card-text">
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                </div>
+                <div class="b mt-3">
+                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                    <button class="btn btn-outline-secondary btn-sm">View</button>
+                    <button class="btn btn-outline-secondary btn-sm">Edit</button>
+                 </div>
+                 <span style="color: #6c757d;">
+                     9 mins
+                 </span>
+                </div>
+            </div>
+         </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="images/hello.png">
+            </div>
+            <div class="card-body">
+                <div class="card-text">
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                </div>
+                <div class="b mt-3">
+                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                    <button class="btn btn-outline-secondary btn-sm">View</button>
+                    <button class="btn btn-outline-secondary btn-sm">Edit</button>
+                 </div>
+                 <span style="color: #6c757d;">
+                     9 mins
+                 </span>
+                </div>
+            </div>
+         </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="images/hello.png">
+            </div>
+            <div class="card-body">
+                <div class="card-text">
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                </div>
+                <div class="b mt-3">
+                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                    <button class="btn btn-outline-secondary btn-sm">View</button>
+                    <button class="btn btn-outline-secondary btn-sm">Edit</button>
+                 </div>
+                 <span style="color: #6c757d;">
+                     9 mins
+                 </span>
+                </div>
+            </div>
+         </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+           <div class="card">
+               <img src="images/hello.png">
+           </div>
+           <div class="card-body">
+               <div class="card-text">
+                   This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+               </div>
+               <div class="b mt-3">
+                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                   <button class="btn btn-outline-secondary btn-sm">View</button>
+                   <button class="btn btn-outline-secondary btn-sm">Edit</button>
+                </div>
+                <span style="color: #6c757d;">
+                    9 mins
+                </span>
+               </div>
+               
+           </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="images/hello.png">
+            </div>
+            <div class="card-body">
+                <div class="card-text">
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                </div>
+                <div class="b mt-3">
+                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                    <button class="btn btn-outline-secondary btn-sm">View</button>
+                    <button class="btn btn-outline-secondary btn-sm">Edit</button>
+                 </div>
+                 <span style="color: #6c757d;">
+                     9 mins
+                 </span>
+                </div>
+            </div>
+         </div>
+         <div class="col-md-4">
+            <div class="card">
+                <img src="images/hello.png">
+            </div>
+            <div class="card-body">
+                <div class="card-text">
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                </div>
+                <div class="b mt-3">
+                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                    <button class="btn btn-outline-secondary btn-sm">View</button>
+                    <button class="btn btn-outline-secondary btn-sm">Edit</button>
+                 </div>
+                 <span style="color: #6c757d;">
+                     9 mins
+                 </span>
+                </div>
+            </div>
+         </div>
+    </div>
+  </div>    
+</div>
+
+<footer>
+  <div>  
+     <p class="justify">
+         <span>
+            New to Bootstrap?
+            <a href="#">Visit our homepage</a>
+            or load our
+            <a href="#">getting started guide</a>
+         </span>
+         <a href="#">Back to top</a>
+     </p>
+  </div>
+
+        
+</footer>
+
+    
+</body>
+</html>
